@@ -46,6 +46,9 @@ public final class VerificationAlgorithm {
             if (year < calendar.get(Calendar.YEAR))
                 return INVALID_DATE;
 
+            // The year of the credit is the actual year but the month is older
+            if (year == calendar.get(Calendar.YEAR) && month < calendar.get(Calendar.MONTH))
+                return INVALID_DATE;
 
             // For a Visa card, its number has to be even
             if ("visa".equalsIgnoreCase(ccType) && lastNumber % 2 != 0)
