@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="BarkBank/src/java"/>
+	<classpathentry kind="src" path="Yaps/src/java"/>
+	<classpathentry kind="src" path="Yaps/test/src"/>
+	<classpathentry kind="lib" path="Yaps/test12.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="F:/jars/dom4j.jar"/>
+	<classpathentry kind="lib" path="F:/jars/eclipselink-2.0.0.jar"/>
+	<classpathentry kind="lib" path="F:/jars/eclipselink-2.2.1.jar"/>
+	<classpathentry kind="lib" path="F:/jars/javax.persistence-2.0.0.jar"/>
+	<classpathentry kind="lib" path="F:/jars/javax.persistence-2.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/jars/jaxen.jar"/>
+	<classpathentry kind="lib" path="F:/jars/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="F:/jars/mysql-connector-java-5.1.21-bin.jar"/>
+	<classpathentry kind="lib" path="F:/jars/xunit/httpunit.jar"/>
+	<classpathentry kind="lib" path="F:/jars/xunit/js.jar"/>
+	<classpathentry kind="lib" path="F:/jars/xunit/nekohtml.jar"/>
+	<classpathentry kind="lib" path="F:/jars/xunit/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="F:/jars/xunit/xmlParserAPIs.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/javax.servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/javax.servlet.jsp-api.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/javax.ejb-api.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/javax.jms-api.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/javax.transaction-api.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/glassfish-naming.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/lib/gf-client.jar"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/domains/domain1/autodeploy"/>
+	<classpathentry kind="lib" path="F:/jars"/>
+	<classpathentry kind="lib" path="D:/glassfish4/glassfish/modules/ejb-container.jar" sourcepath="D:/glassfish4/glassfish/modules/ejb-container.jar"/>
+	<classpathentry kind="output" path="bin"/>
+	<referencedentry kind="lib" path="D:/glassfish4/glassfish/modules/ejb-container.jar" sourcepath="D:/glassfish4/glassfish/modules/ejb-container.jar"/>
+</classpath>
