@@ -62,7 +62,36 @@ public class Customer extends DomainObject implements Serializable{
         setLastname(lastname);
     }
 
-   
+   // ======================================
+    // =           Business methods         =
+    // ======================================
+    /**
+     * This method checks the integrity of the object data.
+     *
+     * @throws CheckException if data is invalid
+     */
+    public void checkData() throws CheckException {
+        if (getFirstname() == null || "".equals(getFirstname()))
+            throw new CheckException("Invalid customer first name");
+        if (getLastname() == null || "".equals(getLastname()))
+            throw new CheckException("Invalid customer last name");
+    }
+
+    /**
+     * Given a password, this method then checks if it matches the user
+     *
+     * @param password
+     * @throws CheckException thrown if the password is empty or different than the one
+     *                        store in database
+     */
+    public void matchPassword(String password) throws CheckException {
+        if (password == null || "".equals(password))
+            throw new CheckException("Invalid password");
+
+        // The password entered by the customer is not the same stored in database
+        if (!password.equals(getPassword()))
+            throw new CheckException("Password doesn't match");
+    }
 
     // ======================================
     // =         Getters and Setters        =
