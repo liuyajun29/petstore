@@ -587,32 +587,6 @@
         </junit>
     </target>
 
-    <!-- =================================================================== -->
-    <!-- Construction de l'archive des sources a remettte                    -->
-    <!-- =================================================================== -->
-    <target name="yaps_zip_src" depends="">
-        <zip destfile="tp${tp}src.zip">
-            <fileset dir=".">
-                <includesfile name="excludedStudentFiles.txt"/> 
-            </fileset>
-        </zip>
-    </target>
-
-    <!-- =================================================================== -->
-    <!-- Corriger                                                            -->
-    <!-- =================================================================== -->
-    <target name="yaps-mark" depends="yaps-compile, yaps_zip_src">
-        <echo message="Marks the application"/>
-        <!-- the jndi file should be there! 
-        <copy file="${yaps.config.dir}/jndi.properties" todir="${yaps.test.classes.dir}"/>
-           -->
-        <java classname="Tests" fork="yes">
-            <sysproperty key="fichierScenario" value="TP${tp}.test"/>
-            <classpath location="${test.jar}"/>
-            <classpath refid="classpath"/>
-            <classpath refid="yaps-classpath"/>
-        </java>
-    </target>
 
 
     <!-- =================================================================== -->
